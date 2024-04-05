@@ -88,7 +88,7 @@ describe('Application Routing', () => {
 
     render(withStoreComponent);
     expect(screen.getByText('Whats inside')).toBeInTheDocument();
-    expect(screen.getByText('Meet the host')).toBeInTheDocument();
+    expect(screen.getByText(/Meet the host/)).toBeInTheDocument();
     expect(screen.getByText(/Reviews/)).toBeInTheDocument();
     expect(screen.getByText(/Other places in the neighbourhood/)).toBeInTheDocument();
 
